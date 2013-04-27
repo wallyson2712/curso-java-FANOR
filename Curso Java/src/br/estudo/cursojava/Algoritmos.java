@@ -33,14 +33,26 @@ public class Algoritmos {
 	}
 	
 	public static void mediaHomensMulheres(){
-		int homem, mulher;
+		int homem, mulher, total;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Digite a quantidade de homens na turma");
+		homem = scan.nextInt();
+		System.out.println("Digite a quantidade de mulheres na turma");
+		mulher = scan.nextInt();
+		
+		total = mulher + homem;
+		
+		System.out.println("A porcentagens de homens na turma é: " + ((double)homem / (double)total) * 100);
+		System.out.println("A porcentagens de mulheres na turma é: " + ((double)mulher / (double)total) * 100);
 		
 	}
 
 	public static void main(String[] args) {
 		// idade();
 		// calculaSalarioMinimos();
-		
+		mediaHomensMulheres();
 		
 	}
 
